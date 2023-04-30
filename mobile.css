@@ -1,0 +1,150 @@
+@media screen and (max-width: 768px) {
+   
+    /* create banner above */
+    /* create info nav_bar above */
+    #nav-bar{
+       flex-direction: column;
+       align-items: start;
+       gap: 30px;
+       margin-left: 30px;
+    }
+    #nav-bar > *{   /* justify-content for nav- bar*/
+        flex: 1;     
+        flex-wrap: wrap;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+
+    }
+    #hidden{
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+    
+    #nav-bar a{
+        text-decoration: none;
+        color: black;
+      
+    } 
+    #nav-bar a:hover{
+        background: rgb(58, 4, 75);
+        color: #f7f7f7;
+        border-radius: 10px;
+      
+    }
+
+    /* create info nav_bar above*/
+    #nav-bar {
+        text-align: center;
+    }  
+
+    /* create info below  */     
+    #info {     
+        flex-direction: column; 
+     }
+     #target{    
+        width: 100%; 
+     }        
+    
+    #personal-info{ 
+        width:100%;       }
+    
+    /* create info above */
+    /* create job info below */
+    .job-info{
+        display:grid;    
+        grid-template-columns: 1fr;        
+        column-gap: 30px;
+        row-gap: 50px ;    
+        margin-top: 30px;
+    }
+    
+    .job-detail{
+           
+        justify-content:start;
+        height: fit-content;   
+    }    
+    
+    /* create job info above */
+    /* create certificate info below */
+    .certificate{
+        display: grid;
+        grid-template-columns: 1fr;     
+        row-gap: 10px;
+    }
+    .certificate-img{
+        width:200px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .certificate-item{
+        display: grid;
+        grid-template-columns: 1fr;     
+        padding-left: 20px;
+        height: fit-content;
+       
+    }
+    .certificate-item2{
+     
+        position: relative; 
+    }
+    .certificate-item3{
+        position: relative;   
+        padding-bottom: 80px; 
+    }
+    .certificate-item3::after,.certificate-item2::after{
+        content:'';
+        height: 1px;
+        width: 90%;
+        background:rgb(255, 145, 0) ;
+        left: 5%;
+        top: -40px;
+        position: absolute;
+    }
+    /* create certificate info above */
+    /* Create project infor below  */
+    .project{
+        display: grid;   
+        grid-column: 1fr;        
+        flex-wrap: wrap;   
+        object-fit: cover;
+        gap: var(--gap-width);  
+       
+    }
+    .project-detail{
+    
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .project-img{
+        width:100%;
+        height: auto;
+    }
+    .project-item{
+     
+        display: flex;   
+        flex-direction: column;
+        object-fit: cover;
+        border: 1px solid rgba(0,0,0,.1);
+        margin-top: auto;  
+        line-height: 20px;  
+    }
+    .project-info-title{
+        padding: 30px 0 30px ;
+        padding-left: 30px;
+    }
+    .project-icon{
+        display: flex;  
+        flex-direction: column;
+        align-self: start;      
+        align-items: center;   
+     
+    }
+    
+    /* Create project infor above  */
+ 
+}
