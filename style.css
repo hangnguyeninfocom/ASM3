@@ -24,7 +24,7 @@
 }
 /* create banner above */
 #banner{
-    background-image: url("/images/banner3.jpg");
+    background-image: url("banner3.jpg");
     background-size: 100% 400px;
     background-repeat: no-repeat;
     height: 400px;
